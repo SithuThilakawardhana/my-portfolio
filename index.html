@@ -1,235 +1,834 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sithumini Thilakawardhana - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Sithumini Thilakawardhana | System Developer</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta
+      name="description"
+      content="Portfolio of Sithumini Thilakawardhana, a System Developer and Software Engineer specializing in web applications and business management systems."
+    />
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Sithu .</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo"> Sithu<span>.</span> </a>
+
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-small">HELLO, I'M</p>
+
+            <h1>
+              Sithumini<br />
+              <span>Thilakawardhana</span>
+            </h1>
+
+            <h2>System Developer & Software Engineer</h2>
+
+            <p class="hero-description">
+              I build practical web applications and business management systems
+              that help organizations manage their daily operations more
+              efficiently.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-code"></i>
+                View My Projects
+              </a>
+
+              <a
+                href="img/SithuminiThilakawardhanaCV.pdf"
+                class="btn btn-outline"
+                download
+              >
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
             </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero bg-primary text-white text-center">
-        <div class="container">
-            <h1 class="display-3">Hi, I'm Sithumini Thilakawardhana</h1>
-            <p class="lead">Undergraduate at Sri Lanka Institute of Information Technology</p>
-            <p class="lead">Software Engineer | Developer | Designer</p>
-            <a href="#projects" class="btn btn-light mt-3">See My Work</a>
-        </div>
-    </section>
+            <div class="hero-socials">
+              <a
+                href="https://github.com/SithuThilakawardhana"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">About Me</h2>
-            <p class="lead text-center">I am a passionate software engineer with a love for creating interactive web
-                applications. My experience includes working with technologies like PHP, Laravel, MERN Stack, Java and
-                React.</p>
-        </div>
-    </section>
+              <a
+                href="https://www.linkedin.com/in/sithumini-thilakawardhana-3844bb25b"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row mt-4">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/laravel_jobportal_desktop.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Job Portal</h5>
-                            <p class="card-text">Laravel, Mysql</p>
-                            <a href="https://github.com/SithuThilakawardhana/Laravel-JobPortal"
-                                class="btn btn-primary">GitHub</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/table_reservation_desktop.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Table Reservation System</h5>
-                            <p class="card-text">Java Servlet Pages (jsp) , Mysql</p>
-                            <a href="https://github.com/SithuThilakawardhana/table-reservation-system"
-                                class="btn btn-primary">GitHub</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/housekeeping_model.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Housekeeping Model</h5>
-                            <p class="card-text">Java Servlet Pages (jsp) , Mysql</p>
-                            <a href="https://github.com/SithuThilakawardhana/housekeeping-model"
-                                class="btn btn-primary">GitHub</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
+              <a href="mailto:sithuminithilakawardana@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
             </div>
-            <div class="row mt-4">
-                <!-- Project 4 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/mithuru_iskole_desktop.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Mithuru Iskole</h5>
-                            <p class="card-text">"Mithru Iskole" is the website created for the final project of the
-                                campus</p>
-                            <a href="https://github.com/SithuThilakawardhana/ResearchWeb"
-                                class="btn btn-primary">GitHub</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 5 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/job-portal.png" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Job Portal</h5>
-                            <p class="card-text">MERN Stack</p>
-                            <a href="https://github.com/SithuThilakawardhana/ITPM-IT3040"
-                                class="btn btn-primary">GitHub</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 6 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/elixir-web.png" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Elixir Web Site Design</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                            <a href="https://github.com/SithuThilakawardhana/Elixir-Website" class="btn btn-primary">GitHub</a>
-                            <a href="https://sithuthilakawardhana.github.io/Elixir-Website/" class="btn btn-secondary">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 text-center">
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span class="window-title"> developer.js </span>
+              </div>
+
+              <div class="code-content">
+                <p>
+                  <span class="code-purple">const</span>
+                  developer =
+                  <span class="code-yellow">{</span>
+                </p>
+
+                <p class="indent">
+                  name:
+                  <span class="code-green"> "Sithumini" </span>,
+                </p>
+
+                <p class="indent">
+                  role:
+                  <span class="code-green"> "System Developer" </span>,
+                </p>
+
+                <p class="indent">
+                  skills:
+                  <span class="code-yellow">[</span>
+                </p>
+
+                <p class="indent2">
+                  <span class="code-green">"PHP"</span>,
+                  <span class="code-green">"Java"</span>,
+                  <span class="code-green">"Jsp"</span>,
+                </p>
+
+                <p class="indent2">
+                  <span class="code-green">"Laravel"</span>,
+                  <span class="code-green">"MySQL"</span>
+                </p>
+
+                <p class="indent">
+                  <span class="code-yellow">]</span>
+                </p>
+
+                <p>
+                  <span class="code-yellow">}</span>;
+                  <span class="cursor"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+
+      <section id="about" class="section about-section">
         <div class="container">
+          <div class="section-heading">
+            <span>01</span>
+
+            <h2>About Me</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="large-text">
+                I'm a software developer interested in building practical
+                systems that solve real business problems.
+              </p>
+
+              <p>
+                My experience includes developing web applications, management
+                systems and database-driven solutions. I enjoy turning manual
+                processes into organized digital workflows.
+              </p>
+
+              <p>
+                I work across frontend and backend development and have
+                experience working with technologies including PHP, Laravel,
+                Java, JavaScript, React and MySQL.
+              </p>
+            </div>
+
+            <div class="about-info">
+              <div class="info-item">
+                <span>Role</span>
+                <strong>System Developer</strong>
+              </div>
+
+              <div class="info-item">
+                <span>Focus</span>
+                <strong>Web & Business Systems</strong>
+              </div>
+
+              <div class="info-item">
+                <span>Database</span>
+                <strong>MySQL / MariaDB</strong>
+              </div>
+
+              <div class="info-item">
+                <span>Based In</span>
+                <strong>Sri Lanka</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <div class="section-heading">
+            <span>02</span>
+
             <h2>Skills</h2>
-            <div class="row justify-content-center mt-4">
-                <div class="col-md-3">
-                    <ul class="list-unstyled">
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list-unstyled">
-                        <li>CSS</li>
-                        <li>Java</li>
-                        <li>MERN Stack</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list-unstyled">
-                        <li>Javascript</li>
-                        <li>React</li>
-                        <li>Laravel</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list-unstyled">
-                        <li>JSP</li>
-                        <li>Springboot</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
+          </div>
+
+          <p class="section-intro">
+            Technologies and tools I use to build web applications and business
+            management systems.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+
+              <h3>Frontend</h3>
+
+              <div class="skill-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>React</span>
+              </div>
             </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-server"></i>
+              </div>
+
+              <h3>Backend</h3>
+
+              <div class="skill-list">
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>Java</span>
+                <span>JSP</span>
+                <span>Spring Boot</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+
+              <h3>Database</h3>
+
+              <div class="skill-list">
+                <span>MySQL</span>
+                <span>MariaDB</span>
+                <span>Database Design</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+
+              <h3>Tools</h3>
+
+              <div class="skill-list">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
+      <!-- ================= EXPERIENCE ================= -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 text-white" style="background-color: #111;">
+      <section id="experience" class="section experience-section">
         <div class="container">
-            <div class="row">
-                <!-- Contact Info -->
-                <div class="col-md-6">
-                    <h2>Contact Me</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-paper-plane"></i> sithumalsi0000@gmail.com</li>
-                        <li class="mb-2"><i class="fas fa-phone"></i> 0788291590</li>
-                    </ul>
-                    <div class="social-icons mt-4">
-                        <a href="https://facebook.com" class="me-3 text-white"><i class="fab fa-facebook"></i></a>
-                        <a href="github.com/SithuThilakawardhana" class="me-3 text-white"><i class="fab fa-github"></i></a>
-                        <a href="www.linkedin.com/in/sithumini-thilakawardhana-3844bb25b" class="me-3 text-white"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <!-- Download CV Button -->
-                    <a href="img/SithuminiThilakawardhanaCV.pdf" class="btn btn-danger mt-4" download>Download CV</a>
+          <div class="section-heading">
+            <span>03</span>
 
-                </div>
+            <h2>Experience</h2>
+          </div>
 
-                <!-- Contact Form -->
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-danger">Submit</button>
-                    </form>
-                </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+
+              <div class="timeline-content">
+                <span class="timeline-date">
+                  January 2025 – 2026 (Present)
+                </span>
+
+                <h3>System Development Lead</h3>
+
+                <h4>Your Daily Foods (Pvt) Ltd</h4>
+
+                <p>
+                  Developed and maintained internal business management systems
+                  covering multiple operational areas of the organization.
+                </p>
+
+                <ul>
+                  <li>Developed database-driven business applications.</li>
+                  <li>Worked on production and operational workflows.</li>
+                  <li>Developed reporting and management features.</li>
+                  <li>
+                    Worked with PHP, JavaScript, MySQL and related technologies.
+                  </li>
+                </ul>
+              </div>
             </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+
+              <div class="timeline-content">
+                <span class="timeline-date"> Previous Experience </span>
+
+                <h3>Software / Development Experience</h3>
+
+                <h4>Global Systems Solutions International</h4>
+
+                <p>
+                  Worked in a technology services environment supporting data
+                  and development-related work.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
+      <!-- ================= PROJECTS ================= -->
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-white">
-        <p>&copy; 2024 Sithumini Thilakawardhana. All rights reserved.</p>
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <div class="section-heading">
+            <span>04</span>
+
+            <h2>Featured Projects</h2>
+          </div>
+
+          <p class="section-intro">
+            A selection of projects I have worked on during my professional,
+            academic and personal development journey.
+          </p>
+
+          <div class="projects-grid">
+            <!-- Project 1 ERP SYSTEM -->
+
+            <article class="project-card featured-project">
+              <div class="project-image">
+                <img
+                  src="img/ERP/ERP HOME.png"
+                  alt="Enterprise ERP & Business Management System"
+                />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/table-reservation-system"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> Enterprise ERP System - Real-world professional project </span>
+
+                <h3>Enterprise ERP & Business Management System</h3>
+
+                <p>
+                  A centralized internal ERP system developed to streamline
+                  operational and administrative processes across multiple
+                  departments.
+                </p>
+
+                <div class="project-tech">
+                  <span>PHP</span>
+                  <span>Javascript</span>
+                  <span>MySQL</span>
+                </div>
+
+                <a
+                  href="https://github.com/SithuThilakawardhana/table-reservation-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View on GitHub
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 TABLE RESERVATION SYSTEM-->
+
+            <article class="project-card featured-project">
+              <div class="project-image">
+                <img
+                  src="img/table_reservation_desktop.jpg"
+                  alt="Restaurant Table Management System"
+                />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/table-reservation-system"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> WEB APPLICATION - Real-world client project </span>
+
+                <h3>Restaurant Table Management System</h3>
+
+                <p>
+                  A web-based restaurant table management application developed
+                  to manage restaurant table-related operations.
+                </p>
+
+                <div class="project-tech">
+                  <span>Java</span>
+                  <span>JSP</span>
+                  <span>MySQL</span>
+                </div>
+
+                <a
+                  href="https://github.com/SithuThilakawardhana/table-reservation-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View on GitHub
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 Job portal laravel-->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/laravel_jobportal_desktop.jpg"
+                  alt="Laravel Job Portal"
+                />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/Laravel-JobPortal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> WEB APPLICATION </span>
+
+                <h3>Laravel Job Portal</h3>
+
+                <p>
+                  A job portal web application developed using Laravel and
+                  MySQL.
+                </p>
+
+                <div class="project-tech">
+                  <span>Laravel</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+
+                <a
+                  href="https://github.com/SithuThilakawardhana/Laravel-JobPortal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View on GitHub
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 4 mithuru iskole -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/mithuru_iskole_desktop.jpg"
+                  alt="Mithuru Iskole"
+                />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/ResearchWeb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> FINAL YEAR PROJECT </span>
+
+                <h3>Mithuru Iskole</h3>
+
+                <p>
+                  An educational web project developed as part of a university
+                  final-year project.
+                </p>
+
+                <div class="project-tech">
+                  <span>Web</span>
+                  <span>JavaScript</span>
+                  <span>Database</span>
+                </div>
+
+                <a
+                  href="https://github.com/SithuThilakawardhana/ResearchWeb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View on GitHub
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 5 job portal mern stack -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="img/job-portal.png" alt="MERN Job Portal" />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/ITPM-IT3040"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> MERN STACK </span>
+
+                <h3>Job Portal</h3>
+
+                <p>A job portal application developed using the MERN stack.</p>
+
+                <div class="project-tech">
+                  <span>MongoDB</span>
+                  <span>Express</span>
+                  <span>React</span>
+                  <span>Node.js</span>
+                </div>
+
+                <a
+                  href="https://github.com/SithuThilakawardhana/ITPM-IT3040"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View on GitHub
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 6 elixier website -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="img/elixir-web.png" alt="Elixir Website" />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/Elixir-Website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                  <a
+                    href="https://sithuthilakawardhana.github.io/Elixir-Website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> WEBSITE </span>
+
+                <h3>Elixir Website</h3>
+
+                <p>
+                  A responsive website design project with a live GitHub Pages
+                  deployment.
+                </p>
+
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <a
+                  href="https://sithuthilakawardhana.github.io/Elixir-Website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 7 house keeping model -->
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/housekeeping_model.jpg"
+                  alt="Housekeeping Model"
+                />
+
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/SithuThilakawardhana/housekeeping-model"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> JAVA APPLICATION </span>
+
+                <h3>Housekeeping Model</h3>
+
+                <p>
+                  A database-driven housekeeping application developed using
+                  Java technologies.
+                </p>
+
+                <div class="project-tech">
+                  <span>Java</span>
+                  <span>JSP</span>
+                  <span>MySQL</span>
+                </div>
+
+                <a
+                  href="https://github.com/SithuThilakawardhana/housekeeping-model"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View on GitHub
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDUCATION ================= -->
+
+      <section id="education" class="section education-section">
+        <div class="container">
+          <div class="section-heading">
+            <span>05</span>
+
+            <h2>Education</h2>
+          </div>
+
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <div>
+              <span class="education-date"> </span>
+
+              <h3>BSc (Hons) in Information Technology</h3>
+
+              <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-content">
+            <span class="contact-label"> 06 — CONTACT </span>
+
+            <h2>
+              Let's build something<br />
+              <span>useful together.</span>
+            </h2>
+
+            <p>
+              If you would like to discuss a project, job opportunity, or
+              collaboration, feel free to get in touch.
+            </p>
+
+            <a href="mailto:sithuminithilakawardana@gmail.com" class="contact-email">
+              sithuminithilakawardana@gmail.com
+              <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <div class="contact-socials">
+              <a
+                href="https://github.com/SithuThilakawardhana"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/sithumini-thilakawardhana-3844bb25b"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="container footer-container">
+        <p>© 2026 Sithumini Thilakawardhana. All rights reserved.</p>
+
+        <a href="#home">
+          Back to top
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
-</body>
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const navMenu = document.getElementById("navMenu");
+      const navLinks = document.querySelectorAll(".nav-link");
 
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
 </html>
